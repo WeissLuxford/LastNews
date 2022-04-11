@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'rb';
+    user-select: none;
+}
+
+.container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.header-content{
+    text-align: center;
+}
+
+.container nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+.container nav ul li{
+    display: inline-block;
+}
+
+.container nav ul li a{
+    font-size: 18px;
+    line-height: 21px;
+    color: #3A3838;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 300ms;
+    padding: 16px 8px;
+    display: block;
+}
+
+.container nav ul li a:hover{
+    color: #EF4423;
+}
+
+.main-box{
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+    background: #EDEDED;
+}
+.item{
+    display: inline;
+    width: 25%;
+    background: #B71C1C;
+    color: #FFFFFF;
+}
+
+.purple{
+    background: #6A1B9A;
+}
+.blue{
+    background: #303F9F;
+}
+.green{
+    background: #00695C;
+}
+
+.item img{
+    width: 100%;
+    display: block;
+    line-height: 1px;
+}
+
+.bottom h3{
+    font-size: 19px;
+    line-height: 22px;
+    padding: 8px 15px 0px 15px;
+}
+
+.bottom p{
+    font-family: 'rr';
+    padding: 15px;
+}
+
+.top p{
+    padding: 8px 15px 8px 15px;
+}
+
+.top h3{
+    padding: 15px 15px 8px 15px;
+}
+
+h2{
+    text-align: center;
+    margin: 40px;
+}
+
+.text h3{
+    font-size: 22px;
+    line-height: 26px;
+    color: #3A3838;
+    padding-top: 20px;
+}
+
+.text p{
+    font-size: 18px;
+    line-height: 21px;
+    color: #686868;
+    font-family: 'rr';
+    margin-top: 30px;
+    max-height: 400px;
+    height: 100%;
+}
+
+.main-container{
+    display: flex;
+}
+
+.text{
+    margin-left: 30px;
+}
+
+footer{
+    background: #3A3838;
+    margin-top: 50px;
+}
+
+.footer-container{
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.footer-container nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content{
+    text-align: center;
+    padding: 28px 0px;
+    color: #FFFFFF;
+}
+
+.footer-container nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container nav ul li{
+    display: inline-block;
+}
+
+.footer-container nav ul li a{
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 16px 8px;
+    transition: 300ms;
+    display: block;
+}
+
+.footer-container nav ul li a:hover{
+    color: #EF4423;
+}
+
+.host{
+    display: block;
+    line-height: 1px;
+}
+
+.main-box-bottom{
+    width: 100%;
+}
+
+.img{
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+}
+/* Footer end*/
+
+/* Mobile start */
+
+
+@media(max-width:1140px){
+    .footer-container nav ul{
+        display: flex;
+        flex-flow: wrap;
+
+    }
+    .text p{
+        overflow: scroll;
+    }
+
+}
+
+@media(max-width:890px){
+    .main-box{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .item{
+        width: 100%;
+    } 
+    .main-container{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+
+    .text{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 0 20px;
+        margin: 0px;
+    }
+    .img{
+        width: 100%;
+    }
+
+    .img img{
+        width: 100%;
+    }
+    .footer-container nav{
+        flex-direction: column;
+        padding: 0 0 50px 0;
+    }
+    .container nav{
+        flex-direction: column;
+        
+    }
+    .container nav ul {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:540px){
+    .main-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .bottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bottom h3{
+        padding: 0 15px 20px 15px;
+    }
+}
+
+
+
+/* Mobile end */
